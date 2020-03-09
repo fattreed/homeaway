@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,12 @@
 		48EF58E4241414D60092A3F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48EF58E2241414D60092A3F0 /* LaunchScreen.storyboard */; };
 		48EF58EF241414D60092A3F0 /* HomeAwayUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EF58EE241414D60092A3F0 /* HomeAwayUIKitTests.swift */; };
 		48EF58FA241414D60092A3F0 /* HomeAwayUIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EF58F9241414D60092A3F0 /* HomeAwayUIKitUITests.swift */; };
+		48EF5908241416C50092A3F0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EF5907241416C50092A3F0 /* API.swift */; };
+		48EF590C24142A9A0092A3F0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EF590B24142A9A0092A3F0 /* Model.swift */; };
+		48EF590E24142EA50092A3F0 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EF590D24142EA50092A3F0 /* EventCell.swift */; };
+		48EF591224143AEA0092A3F0 /* HomeAway+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EF591124143AEA0092A3F0 /* HomeAway+DateFormatter.swift */; };
+		48EF591524144C6D0092A3F0 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 48EF591424144C6D0092A3F0 /* Kingfisher */; };
+		48EF591724144F640092A3F0 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EF591624144F640092A3F0 /* EventViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,11 @@
 		48EF58F5241414D60092A3F0 /* HomeAwayUIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeAwayUIKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48EF58F9241414D60092A3F0 /* HomeAwayUIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAwayUIKitUITests.swift; sourceTree = "<group>"; };
 		48EF58FB241414D60092A3F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48EF5907241416C50092A3F0 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		48EF590B24142A9A0092A3F0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		48EF590D24142EA50092A3F0 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		48EF591124143AEA0092A3F0 /* HomeAway+DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeAway+DateFormatter.swift"; sourceTree = "<group>"; };
+		48EF591624144F640092A3F0 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48EF591524144C6D0092A3F0 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +118,11 @@
 				48EF58E0241414D60092A3F0 /* Assets.xcassets */,
 				48EF58E2241414D60092A3F0 /* LaunchScreen.storyboard */,
 				48EF58E5241414D60092A3F0 /* Info.plist */,
+				48EF5907241416C50092A3F0 /* API.swift */,
+				48EF590B24142A9A0092A3F0 /* Model.swift */,
+				48EF590D24142EA50092A3F0 /* EventCell.swift */,
+				48EF591124143AEA0092A3F0 /* HomeAway+DateFormatter.swift */,
+				48EF591624144F640092A3F0 /* EventViewController.swift */,
 			);
 			path = HomeAwayUIKit;
 			sourceTree = "<group>";
@@ -144,6 +161,9 @@
 			dependencies = (
 			);
 			name = HomeAwayUIKit;
+			packageProductDependencies = (
+				48EF591424144C6D0092A3F0 /* Kingfisher */,
+			);
 			productName = HomeAwayUIKit;
 			productReference = 48EF58D4241414D10092A3F0 /* HomeAwayUIKit.app */;
 			productType = "com.apple.product-type.application";
@@ -216,6 +236,9 @@
 				Base,
 			);
 			mainGroup = 48EF58CB241414D10092A3F0;
+			packageReferences = (
+				48EF591324144C6D0092A3F0 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 48EF58D5241414D10092A3F0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48EF590C24142A9A0092A3F0 /* Model.swift in Sources */,
 				48EF58DC241414D10092A3F0 /* ViewController.swift in Sources */,
+				48EF591224143AEA0092A3F0 /* HomeAway+DateFormatter.swift in Sources */,
 				48EF58D8241414D10092A3F0 /* AppDelegate.swift in Sources */,
+				48EF5908241416C50092A3F0 /* API.swift in Sources */,
+				48EF591724144F640092A3F0 /* EventViewController.swift in Sources */,
+				48EF590E24142EA50092A3F0 /* EventCell.swift in Sources */,
 				48EF58DA241414D10092A3F0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,6 +618,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		48EF591324144C6D0092A3F0 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.13.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		48EF591424144C6D0092A3F0 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48EF591324144C6D0092A3F0 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 48EF58CC241414D10092A3F0 /* Project object */;
 }
